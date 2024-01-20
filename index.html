@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aizhona</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js"></script>
+
+</head>
+<body>
+  
+<div class="container" id="container">
+    <div id="welcomeMessage">
+        <h1>Сәлеметсіз бе, Айжан ханым!</h1>
+        <img src="./aizh.jpg" alt="aizh" width="300px" height="300px">
+        <p>Бір минут уақытыңызды бөле аласыз ба? бос болсаңыз...</p>
+        <button id="requestButton" onclick="showRequest()">мені бас...</button>
+    </div>
+    <div id="requestMessage" class="hidden">
+        <p>Келесі апта мен сертификат алуға дипломный жазуым керек еді және маған демалыс қажет болып тұр...</p>
+        <p>вторник күні өзіме демалыс екен, енді среда күнге Жужумен келістім, ол менің орныма среда шығып берсе, мен орнына воскресенье шығып беремін.</p>
+        <img src="./ggr.jpg" alt="График" width="200px" height="300px">
+        <p class="pls">... сіз қарсы болмасаңыз әрине</p>
+        <button id="acceptButton" onclick="acceptRequest()">қарсы емеспін </button>
+        <button id="rejectButton" onclick="showGift()">қарсымын</button>
+    </div>
+    <div id="giftMessage" class="hidden">
+        <p>менің сізге сыйлығым бар!</p>
+        <button id="giftButton" onclick="showGiftImage()">сыйлықты алу үшін мені бас</button>
+    </div>
+    <div id="sadMessage" class="hidden">
+        <p class="text">Ну ладно...(бірақ жауабын сообщение қылып вацаптан жаза салыңызшы, не басқаныңызды білуді үйренбедім әлі)</p>
+        <img src="./sad.jpeg" alt="dog" width="200px" height="300px">
+    </div>
+</div>
+
+<script src="./script.js"></script>
+
+</body>
+</html>
